@@ -1,0 +1,12 @@
+#!/bin/sh
+pytest
+if [ $? -ne 0 ]; then
+	echo "Tests failed. Please fix the issues before pushing."
+	exit 1
+fi
+
+black --check .
+if [ $? -ne 0 ]; then
+	echo "Black found formatting issues. Please run 'black .' to fix them"
+	exit 1
+fi

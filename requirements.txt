@@ -1,0 +1,11 @@
+fastapi[standard]
+python-dotenv
+asyncpg
+sqlalchemy
+pydantic-settings
+greenlet
+orjson
+pytest
+testcontainers[postgresql]
+pytest-asyncio
+slowapi

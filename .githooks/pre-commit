@@ -1,0 +1,6 @@
+#/bin/sh
+black --check .
+if [ $? -ne 0 ]; then
+  echo "Black found formatting issues. Please run 'black .' to fix them"
+  exit 1
+fi
